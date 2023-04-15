@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 176685062}
   - component: {fileID: 176685064}
   - component: {fileID: 176685063}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50212,6 +50212,7 @@ GameObject:
   - component: {fileID: 1476488501}
   - component: {fileID: 1476488502}
   - component: {fileID: 1476488503}
+  - component: {fileID: 1476488504}
   m_Layer: 7
   m_Name: HeavyBandit
   m_TagString: Untagged
@@ -50365,6 +50366,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1476488504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476488497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e369c8edeebd534c9285a3eaf38229d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1476488503}
+  maxHealth: 100
 --- !u!1 &1747178450
 GameObject:
   m_ObjectHideFlags: 0
@@ -51023,7 +51038,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 311
   m_GroundCheck: {fileID: 1747178451}
   m_CeilingCheck: {fileID: 1950925811}
   m_CrouchDisableCollider: {fileID: 2117700223}
@@ -51161,3 +51176,4 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+  attackDamage: 40
